@@ -7,13 +7,13 @@ const router = express.Router();
 //import conntroller
 
 const { dummyLink } = require("../controllers/LikeController");
-
+const {createComment} = require("../controllers/CommentController");
 
 
 
 //Mapping create
 router.get("/dummyroute", dummyLink );
-
+router.post("/comments/create", createComment);
 
 
 //export
